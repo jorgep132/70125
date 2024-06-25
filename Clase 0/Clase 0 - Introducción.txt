@@ -1,0 +1,40 @@
+MERN: Mongo , Express, React, Node
+
+¿Qué es un "stack"?
+
+Son tecnologías que, en conjunto, nos brindan la posibilidad de desarrollar sistemas completos, debido a su máxima compatibilidad.
+La forma en la que el Front y el Back trabajan en conjunto se expresa como Fullstack.
+
+MongoDB: Base de datos no relacional
+ExpressJS: framework para crear servidores en NodeJS
+ReactJS: librería para desarrollar interfaces de usuario
+NodeJS: entorno de ejecución de JavaScript
+
+
+¿Cómo probamos JavaScript?
+
+Cliente Web: lo utilizamos desde la consola del navegador, sin instalar nada ya que usamos el motor del navegador.
+
+Node JS: se instala ya que se utiliza fuera del navegador, podemos escribir JavaScript desde la PC directamente. Se va a utilizar en el curso.
+
+Node JS
+
+Cuando se trabaja del Back no tenemos navegador, necesitamos una tecnología que nos permita correr código por fuera del navegador en este curso vamos a usar NodeJS.
+Tener en cuenta:
+- NodeJS va a levantar un entorno completo para probar las funciones.
+- Debe correrse desde un CLI para visualizar los avances del código.
+- Usualmente usaremos el CLI de Visual Studio Code
+
+Tipos de datos
+
+Primitivos: String, Boolean, Number, Null y Undefined. La copia es por valor.
+
+Objeto: Object, Array y funciones. La copia es por referencia.
+
+Date (fecha)
+RegExp (expresiones regulares)
+Error (datos de error)
+Arrays (serie de lementos o formación tipo vector o matriz. Objeto especial que carece de métodos.
+Objetos especiales: global, prototipo y otros.
+
+
