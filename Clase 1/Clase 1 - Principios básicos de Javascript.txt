@@ -1,0 +1,28 @@
+Proyecto final: API REST
+
+Vamos a desarrollar un backend de una aplicación de e-commerce para vender productos de un rubro a elección.
+
+El servidor se va a basar en un diseño de capaz, orientado a MVC.
+
+
+Objetivo de la clase: Familiarizarse con los conceptos de JavaScript y conocer los elementamos del lenguaje aportados por ES6.
+
+¿Qué es ECMAScript?
+
+Es un estándar que se ocupa de regir como debe ser interpretado el lenguaje de JS.
+Es para que todos los navegadores estén de acuerdo en como interpretar el código.
+El cambio más importante se ocasionó con ES6, en 2015.
+Anteriormente se declaraba la variable var, hoy día gracias al cambio se utilizan let y const.
+
+Reasignable = se cambia el valor de la variable. (let)
+Mutable = no se cambia el valor de la variable pero si podemos cambiar los valores internos si, por ejemplo, esta contiene un array o un objeto. (const)
+
+Scopes: define el alcance de una variable o const a un cierto contexto.  Son los bloques de código.
+
+Scope global: afecta a todo el nivel del archivo.
+Scope local: afecta solo a la función o bloque de código declarado.
+
+
+Closures en JS: se usaban antes de que existieran las 'clases'. Desde la implementación de las 'clases' ya no se usan las closures.
+
+Clases: funcionan como moldes, donde podemos crear varios objetos a partir de ella, llamados instancias. 
