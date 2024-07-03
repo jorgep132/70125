@@ -1,0 +1,51 @@
+ECMAScript
+
+En resumidas palabras, define los estandares para que todos los navegadores sepan interpretar los códigos de JS.
+
+Proceso de cambios:
+1. Definir las nuevas funciones y se eliminan las obsoletas.
+2. Los cambios van a la etapa de pruebas.
+3. Se hace "release", es decir, liberan los cambios y los navegadores se tienen que ajustar a esa nueva version.
+
+ES6
+
+El mayor cambio realizado fue en el ES6 en el 2015, donde se dejo de utilizar VAR y se comienza a usar LET y CONST.
+
+Javascript y ES7
+Cambios mas destacables:
+1.Se introduce el operador exponencial **, para ir independizandose de la libreria Math.
+2.Manejo de array includes. Nos permite saber si un elemento existe o no dentro de un array.
+
+Javascript y ES8
+
+Cambios mas destacables:
+1. Se introduce Async await para mejor control asincrono.
+2. Object.entries, object.values, object.keys para un mejor control interno de las propiedades de un objeto.
+
+Javascript y ES9
+
+Cambios mas destacables:
+1. Resolvedores de promesas con .finally().
+2. Mayor control a los objetos con operadores rest y spread.
+
+Javascript y ES10
+
+Cambios mas destacables:
+1. String.trim(): remueve los espacios innecesarios en una cadena.
+2. Array.flat(): remueve las anidaciones internas en array y dejan un arreglo plano.
+3. Dynamic import: permite importar solo los modulos necesarios, ahorrando espacio y memoria.
+
+Dynamic Import:
+Uno de los problemas de los import tradicionales es que traen todos los modulos
+Es impractico porque puede haber algunos que no se utilizan al mismo tiempo
+Dynamic import permite importar solo los modulos que necesito segun una necesidad particular.
+Se utiliza principalmente en codigos que utilizan el patron de diseño Factory.
+
+Javascript y ES11
+
+Cambios mas destacables:
+1. Operador nullish. Sirve para poder colocar un valor por default a variables que podrian ser nulas
+o indefinidas.
+2. Variables privadas dentro de las clases, esto permite que aglunas variables no sean accesibles desde el enterno de instancia
+de una clase y solo sea utilizada de manera interna.
+
