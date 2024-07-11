@@ -1,0 +1,96 @@
+Funciones
+
+Tipos:
+- Tradicionales: declaradas bajo la sintaxis function nombre()
+
+- Arrow Function: declaradas bajo la sintaxis const nombre = (args) =>{return args}
+Anonima intrinsecamente.
+
+- Funcion definida: cuenta con nombre especifico, se usan para no reasignarse
+
+- Funcion anonima: no cuenta con nombre, solo implementacion.
+Son pensadas para reasignarse o utilizarse en un proceso sin almacenar memoria.
+
+Las funciones son un bloque de codigoq ue pueden ser llamados en diferentes momentos de ejecucion
+de nuestro programa. Pueden tener su identificador al declararse o ser anonimas.
+Son reasignables.
+
+¿Por que querriamos reasignar una funciona?
+Para no tener que armar otra
+
+¿Por que querriamos utilizar una funcion sin definirla primero?
+Estas son funciones anonimas, se usan en el momento y listo.
+
+CALLBACKS
+
+Se puede  interpretar como enviar una funcion a otra funcion.
+Un callback es una funcion que se paso como parametro de otra funcion.
+Permite que se ejecuten operaciones adicionales dentro de si mismas.
+Ejemplos:
+- Metodo onClick en frontend
+- Metodo forEach
+- Metodo map o filter
+
+Convenciones de callback
+- Siempre es el ultimo parametro
+- Suele ser una funcion que recibe dos parametros
+- La funcion llama al callback al terminar de ejecutar todas sus operaciones
+- Si la operacion fue exitosa la funcion llamara al callback pasando null como primer paraemtro y si
+genero algun resultado este pasare siempre como segundo parametro
+- Si la operacion resulto en un error, la funcion llamara al callback pasando el error obtenido como primer parametro
+
+Callbacks anidados
+
+Es cuando un callback puede llamar a otro callback y asi sucesivamente, se conoce tambien como
+callback hell, tambien conocida como Pyramid of Doom.
+Habran procesos que requieren operaciones de mas pasos que 1,2, generando procesos secuenciales donde
+se llama una funcion a la otra, terminando en muchos callbacks anidados.
+
+Estrategia para solucionar el problma del callback Hell, "promesas". Ironicamente, estas "promesas"
+tambien pueden generar codigos como "callback Hell".
+
+Promesas
+Es un objeto especial que nos permitira encapsular una operacion, la cual reaccionara a dos posibles
+situaciones dentro de una promesa: si se cumple/si no se cumple
+Estados: pending, no sabemos cuando se resolvera la promesa, sin embargo cuando llega
+el momento se nos notifica si la promesa se cumplio (fulfilled, tambien puede encontrarse como Resolved)
+tambien puede notificarnos que la promesa no se cumplio (rejected).
+Es una funcion con dos callbacks: resolve, reject.
+
+Pending -> RESOLVED .then()
+        -> REJECTED .catch()
+
+Sincronismo
+Las instrucciones se ejecutan en cascada, tarea 1 -> tarea 2 -> tarea 3 y asi sucesivamente.
+En todo momento solo se ejecuta las instruccionesde una sola de las funciones a la vez.
+El fin de una funcion marca el inicio de la siguiente, y el fin de esta, el inicio de la que sigue,
+y asi sucesivamente. Es una secuencia que ocurre en una unica línea de tiempo.
+
+Asincronismo
+Si buscamos que las tareas trabajen en "paralelo", tenemos que programar instrucciones asincronas.
+No controlamos cuando termina la funcion, solo cuando comienza.
+Si una tarea depende del resultado de otra, genera problemas porque se esperará la ejecucion en paralelo.
+Las operaciones asincronas no son bloqueantes, las instrucciones pueden seguir ejecutandose en paralelo
+Esto implica que la tarea 3 podria terminarse antes que la tarea 1 por ej.
+
+Async/Await
+Palabras reservadas que, trabajando juntas, permiten gestionar un entorno asincrono, resolviendo
+las limitantes del .then y .catch.
+Async: se coloca al inicio de una funcion, indicando que todo el cuerpo se debe ejecutar de manera asincrona.
+Await: espera por el resultado de la promesa y extraer su resultado.
+Al ser operaciones que podrian salir bien, pero tambien mal, es importante encerrar el cuerpo en un bloque
+try{} catch{}.
+
+
+
+
+
+
+
+
+
+
+
+
+
+

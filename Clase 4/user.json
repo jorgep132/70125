@@ -1,0 +1,20 @@
+[
+  {
+    "nombre": "Jorge",
+    "apellido": "Pineiro",
+    "password": "978125aadb6c44cc1d9d43e5fd4f233e74b9e4832f9bcf9d0dd5af88e4473bb5",
+    "nombreUsuario": "JorgeP"
+  },
+  {
+    "nombre": "Matias",
+    "apellido": "Volpian",
+    "password": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+    "nombreUsuario": "Ma7e"
+  },
+  {
+    "nombre": "Mauricio",
+    "apellido": "Salvagno",
+    "password": "9366b9b8830d60624ba3d60a9321f05b5eca4d5b8f3a2bf4103519bb8a9d6665",
+    "nombreUsuario": "Drackon"
+  }
+]

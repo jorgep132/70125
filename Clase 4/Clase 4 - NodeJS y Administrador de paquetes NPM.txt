@@ -1,0 +1,55 @@
+Modulos nativos de NodeJS: FS, CRYPTO, HTTP, PATH
+
+NodeJS: Es un entorno de desarrollo donde javascript se puede correr del lado del servidor.
+Surge de la necesidad de ejecutar js del lado del servidor, no del navegador. Cuenta con el mismo motor de google
+chrome, siendo el V8.
+
+Modulos nativos:
+
+Crypto: Encripta la contraseña para que no se sepa cual es la
+
+NPM: Node Package Manager.
+Se refiere al manejador de paquetes Node. Permite a los desarrolladores crear sus propios modulos y, por ej, subirlos
+a la nube para que los puedan usar otros desarrolladores.
+Los paquetes seran package.json
+¿Que es package.json?
+Son archivos generados de los proyectos, los cuales tendran especificaciones como:
+- Nombre del proyectos
+- Version
+- Scripts para correrlos
+
+Dependencias: cuando necesitamos Dependencias de terceos tenemos que añadirlas en el package.json
+añaniendo un campo nuevo llamado "dependencies", el cual tendra los modulos que tenemos instalados en ese proyecto.
+
+Instalaciones globales o locales
+
+Locales: npm install modulo_a_instalar
+Solo se hacen dentro del proyecto donde se esta trabajando, el cual crea una carpeta node_modules.
+No son compartidas.
+
+Global: npm install -g modulo_a_instalar
+Se instalan en la PC. Lo malo es que si tenemos varios proyectos con algunas dependencias con diferentes versiones
+los demas proyectos que usaban una version diferente pueden "romperse".
+
+Manejo de versiones en NPM:
+Ej:
+v2.0.4 
+El primer numero es Major version: cambios mayores que no son compatibles con otras versiones.
+El segundo numero es Minor version: no afectan a versiones anteriores, no afectaria la estructura del proyecto.
+El tercer numero es Patch version: no se cambia nada estructuralmente hablando.
+
+Operadores para actualizar versiones:
+
+El operador ^ sirve para instalar la version menor mas alta.
+El operador ~ sirve para instalar solo los parches
+Si no ponemos ningun operador se instala exactamente la version
+
+Comandos para actualizar en NPM:
+npm outdated es un comando que leerá las dependencias instaladas en nuestro package.json y,
+según el operador que hayamos colocado, nos indicará qué es lo que nos “conviene”.
+
+
+
+
+
+
