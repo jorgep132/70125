@@ -1,0 +1,19 @@
+Nodejs: Entorno de ejecucion de js.
+Modulo: Conjunto de funciones y objetos.
+Modulo notivo: modulos que vienen en node js
+Package.json: archivo de especificacion del proyecto, sirve para contener las depdencias del proyecto.
+Dependencia: todos los modulos externos a nuestros proyectos que se requieren instalar.
+
+Sincronismo:
+Son opreaciones bloqueantes o sincronas, se ejecutan de manera escalonada y hasta que una linea no
+finaliza, no se ejecutara otro.
+
+Asincronismo:
+Acciones no bloqueantes, se ejecutan y el codigo puede seguir ejecutandose en paralelo.
+
+setTimeout
+Se utiliza para establecer un tiempo determinado, una vez finalizado ese tiempo en ms se ejecutara la tarea.
+Es decir, la funcion comienza pero finaliza en los ms determinados. 1000ms = 1s
+
+SO -> FileSystem (fs) -> archivos
+
