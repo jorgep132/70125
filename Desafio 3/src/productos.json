@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "title": "Arroz blanco",
+    "description": "Arroz blanco de calidad",
+    "price": 1200,
+    "thumbnail": "Foto",
+    "code": 9032,
+    "stock": 5
+  },
+  {
+    "id": 2,
+    "title": "Manteca",
+    "description": "Buena calidad",
+    "price": 3000,
+    "thumbnail": "Foto",
+    "code": 9055,
+    "stock": 100
+  },
+  {
+    "id": 4,
+    "title": "Pure de papa",
+    "description": "Pure de papa instantaneo",
+    "price": 1200,
+    "thumbnail": "Foto",
+    "code": 9039,
+    "stock": 5
+  },
+  {
+    "id": 5,
+    "title": "Dulce de leche",
+    "description": "Dulc de leche Sancor",
+    "price": 1500,
+    "thumbnail": "Foto",
+    "code": 9042,
+    "stock": 3
+  },
+  {
+    "id": 6,
+    "title": "Oreos",
+    "description": "Galletitas oreos",
+    "price": 1100,
+    "thumbnail": "Foto",
+    "code": 9058,
+    "stock": 9
+  },
+  {
+    "id": 7,
+    "title": "Leche",
+    "description": "Leche entera",
+    "price": 1500,
+    "thumbnail": "Foto",
+    "code": 9034,
+    "stock": 3
+  },
+  {
+    "id": 8,
+    "title": "Alfajor",
+    "description": "Alfajor triple",
+    "price": 1100,
+    "thumbnail": "Foto",
+    "code": 9038,
+    "stock": 9
+  }
+]
