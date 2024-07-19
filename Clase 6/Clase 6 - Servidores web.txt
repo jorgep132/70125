@@ -1,0 +1,65 @@
+Protocolo HTTP: conjunto de reglas que permite la comunicación entre 2 o más sitemas.
+Se basa en petición (request) y respuesta (response).
+El cliente realiza el request y el servidor devuelve un response.
+En el backend vamos a trabajar mayormente del lado del response, y en el frontend
+se ve más frecuentemente el lado del request.
+El servidor, por defecto, puede escuchar muchas peticiones de uno o más clientes al
+mismo tiempo. Si el servidor se apaga, las peticiones no se resolverán.
+
+Nosotros vamos a construir APIs. A grandes rasgos se ocupan de enviar objetos JSON a las paginas web para que tengan la información y mostrarla de manera dinámica.
+
+Se utilizara nodemon a partir de esta clase.
+Nodemon es una herramienta que nos permite reinciar el servidor de manera automatica cuando haya cambiso en el codigo. Sin utilizarla, tendríamos que apagar y prender el servidor manualmente.
+Se installa como "npm install -g nodemon"
+
+La diferencia entre correr node y nodemon es que cuando usamos nodemon es que si modificamos
+el codigo en node tenemos que cortar el programa y volver a ejecutarlo. Con nodemon no 
+volvemos a correr el servidor. Apenas se hace el cambio, se ejecuta solo.
+
+Express js
+Es un framework minimalista.
+Un framework, por su traduccion, es un marco de trabajo que nos brinda herramientas y utilidades
+predefinidas para realizar una tarea en concreto. En nuestro caso, express js, sirve para desarrollos
+de servidores web.
+Facilita:
+- Diferentes rutas para peticiones
+- Mejora la estructura del proyecto
+- Maneja funcionalidades mas complejas
+- Utilizacion de middlewares
+
+Preparar proyecto de express js:
+1. npm init -y
+Como no es nativo de nodejs se necesita contar con un package.json.
+2. npm install express. Esto nos crea una carpeta "node_modules". Ya que es un
+framework instala todas las utilidades y dependencias que utiliza.
+3. Estructurar el proyecto:
+Se recomienda tener una carpeta src donde vamos a crear el archivo
+de nombre app.js. Luego, el archivo app.js puede importar las depedencias instaladas de express js
+Se recomienda usar import/export. Dentro del archivo package.json se agrega "type": "module"
+sino no funcionara import/export.
+Siempre express es una instalacion local porque es un framework.
+
+Si todos los proyectos funcionan en conjunto, cada proyecto debe tener un puerto diferente.
+Si funcionan de manera independiente, pueden usar el mismo puerto.
+
+Endpoint: puede ser, a grandes rasgos, la URL para acceder a una determinada parte del servidor
+o pagina web.
+
+Objeto request
+Cuenta con tres propiedades principales:
+req.query, req.params y req.body
+Req.params: son los parametros que se definen dentro de una ruta. Se definen : antes del parametro.
+
+Req.query: son consultas realizadas a un determinado endpoint. Si en la URL ponemos ? express reconocera
+que hay que agregar informacion al objeto req.query para poder utilizarlo en el endpoint.
+Cuando buscamos algo en el navegador, llamamos a un endpoint haciendo un query.
+IMPORTANTE
+Debemos configurar el servidor para que reciba datos complejos desde la url
+utilizamos la linea: app.use(express.urlencoded({extended:true}))
+Esos datos complejos que recibe se mapean en el req.query.
+
+Diferencia entre params y query:
+Los params son obligatarios y tienen un numero definido. Si definimos 2, tendra 2 params, por ej.
+Las queries no son obligatarias. Tienen un numero indefinido.
+Las queries se usan para realizar algunos filtros, ej: filtrar peliculas por genero.
+En cambio, si queremos ver una pelicula en especial con un id usamos un param.
