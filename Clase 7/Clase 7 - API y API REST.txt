@@ -1,0 +1,47 @@
+API (Application Programming Interface)
+
+Es un conjunto de definiciones y reglas que permiten que dos equipos puedan integrarse para trabajar
+juntos. La mejor analogía es que permite que el front y el back puedan trabajar juntos.
+
+Que permite:
+
+- A que endpoint debo apuntar para la tarea que necesito.
+- Que metodo debo utilizar para ese recurso
+- Que informacion debo enviar para realizar correctamente mi REQ
+
+API REST
+
+Cuando hacemos un REQ o cuando recibimos una RES, esta debe tener un formato.
+REST (REpresentational State Transfer) permite definir la estructura que deben tener
+los datos para poder trnasferirse.
+REST define como debe ser el cuerpo del mensaje a transferir.
+Los dos formatos mas importantes son JSON y XML.
+
+XML: Es un formato parecido al HTML.
+JSON: Escribe lo mismo que el XML pero como objeto.
+
+Entonces... una API REST es un modelo completo para tener perfectamente estipulados
+los protocolos, con el fin de poder hacer un sistema de comunicación completo entre un cliente
+y un servidor.
+
+Caracteristicas:
+Arquitectura Cliente-Servidor sin estado. 
+Cacheable:
+- Admite un sistema de almacenamiento caché.
+- LA red debe soportar un caché en varios niveles.
+- Evita repetir varias conexiones entre el servidor y el cliente, en caso de que las 
+peticiones idénticas fueran a generar la misma respuesta.
+
+Operaciones comunes:
+POST, GET, PUT Y DELETE.
+GET: Traer.
+POST: Enviar.
+PUT: Actualizar. Ej: actualizar un producto en e-commerce
+DELETE: Borrar. Ej: borrar un producto en e-commerce. Se borra pero no del todo, es un borrado lógico.
+Generalmente es un booleano que está o en true o false.
+Estos procesos son parecidos a los de CRUD (ABM)
+
+Interfaz uniforme:
+En un sistema REST cada recurso debe contar con una URI (Unfirom Resource Identifier).
+La URI es el conjunto de la URL.
+

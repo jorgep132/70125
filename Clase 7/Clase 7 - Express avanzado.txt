@@ -1,0 +1,46 @@
+Códigos de estado en HTTP
+
+Cuando realizamos un request mediante protocolo HTTP, el server nos dara un response con información y
+un estado del proceso. Eso nos indica como va el proceso y como finalizó.
+
+El request(req) es un OBJETO que tiene lo que escribimos en la URL, header, metodos, etc. Esto viaja
+a un servidor. Este procesa la información y nos devuelve un response (res). El RES tendra un código.
+Ej, 200, implicando que se resolvió ok, o 404 not found (no encontrado)
+El CLIENTE NO ES EL USUARIO. El cliente es el Front.
+
+Como se forman los códigos:
+1xx informational
+2xx success
+3xx redirection
+4xx client error
+5xx server error
+
+Los más conocidos:
+200: OK - El proceso finalizó bien.
+
+301: Permanent Redirect - Esta relacionado con el caché.
+El caché es un espacio en memoria donde se almacena información de la web, para que si yo hago otra petición
+no va al servidor, sino que al estar cargado lo devuelve directamente.
+302: Temporary Redirect - 
+304: Not modified
+
+400: El cliente realiza una peticion que no cumple las reglas de comunicacion. Le pudo haber faltado
+enviar un dato o lo envió en un formato inválido.
+401: Unauthorized error - El cliente no se ha identificado.
+403: Frobidden - El lciente esta logueado pero le faltan permisos.
+404: Not Found - No encuentra el recurso.
+405: Method Not Allowed
+
+500: Error de servidor - El cliente envía la información correctamente pero el servidor se "rompe".
+501: Not Implemented
+502: Bad Gateway
+503: Service Unavailable
+504: Gateway Timeout
+
+POSTMAN: Simula un cliente (front). Se instala en VSC.
+GET: Traer.
+POST: Enviar.
+
+Podemos usar en el PACKAGE.JSON:
+"dev": "node --watch server.js"
+De esta manera corremos npm run dev y reemplaza al nodemon.
