@@ -1,0 +1,23 @@
+Router en JavaScript:
+
+Un router nos permite crear "mini aplicaciones" para luego usar modulo y no tener archivos
+con muchas lineas de codigo. Lo ideal seria 150, 170 como mucho.
+Es una funcionalidad interna de express. No hace falta instalar nada, salvo express.
+Separa y lleva cada entidad (ruta) a su propio archivo.
+
+Como ordenar:
+Carpeta SRC -> caperta Routers -> archivos js relacionados, cart, users, products, etc
+Dentro de SRC estara el server.js
+
+Archivos estaticos:
+Se guardaran en la carpeta public
+Ej de archivos estaticos: html, png.
+Son recursos que pueden ser visibles para el cliente de manera directa.
+Como dice el nombre, son recursos publicos de facil acceso al cliente.
+Los usos:
+- Cuando necesitamos alojar imagenes
+- Cuando necesitamos alojar una pagina web: html, css, etc.
+Se debe indicar a express que usemos la carpeta:
+app.use(express.static('public'))
+
+

@@ -1,0 +1,25 @@
+Middleware:
+Utilizamos, en express, app.use. Cada vez que hacemos esto, utilizamos un middleware.
+Hace referencia a intermediario, siempre se ejecuta antes de llegar al endpoint.
+Uso:
+- Dar informacion de logs.
+- Autorizar o rechazar usuarios antes de llegar al endpoint (seguridad).
+- Agregar o alterar informacion del objeto req
+- Redireccionar segun sea necesario (router)
+- En ciertos casos finaliza la peticion antes de llegar al endpoint. (seguridad)
+Los middleware se ejecutan en orden
+
+Tipos de middleware:
+
+- Nivel aplicacion
+- Multer:
+Es de carga de archivos. Es un middleware de terceros. Realizamos carga de archivos 
+al servidor. 
+En ocasiones el cliente necesitara subir una imagen, ej foto de perfil.
+Se debe instalar y configurar basandonos en la documentacion.
+Instalar
+1. npm i Multer
+2. Creamos carpeta utils
+3. Creamos archivo multer.js
+4. Configuramos archivo multer.js (ver archivo)
+
