@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "title": "Alfajor Havanna",
+    "description": "Alfajor negro con dulce de leche",
+    "code": "HVN132",
+    "price": 1200,
+    "status": true,
+    "stock": 24,
+    "category": "Golosinas",
+    "thumbnails": "public/images/1722344382997-alfajor_havanna.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Alfajor Guaymallen Blanco",
+    "description": "Alfajor blanco con dulce de leche",
+    "code": "GYM132",
+    "price": 450,
+    "status": true,
+    "stock": 24,
+    "category": "Golosinas",
+    "thumbnails": "public/images/1722344417784-guaymallen_blanco__87288.jpg"
+  }
+]
