@@ -1,0 +1,38 @@
+Hay varios motores de plantillas como solucion de dinamismo en sitios web:
+Handlebars, EJS, PUGJS
+
+Motor de plantillas vs liberarías y frameworks
+¿Qué es mejor React o Handlebars en el servidor? Ninguno es mejor y peor, todo va a depender.
+
+Nivel de dinamismo:
+Rfiere a que tanta interaccion tiene el usuario con la pagina, ademas de que tan cosntantes son los cambios
+y el renderizado de la pagina.
+
+¿Qué elegir segun el nivel de dinamismo?
+Para "landing pages" el dinamismo es casi nulo, salvo los tipicos formularios del final.
+Se puede usar javascript puro para resolver el problema, no necesitamos un nivl de complejidad en una
+tarea tan sencilla.
+
+Al hablar de website ya crece el proyecto porque vamos por diferentes páginas.
+A medida es mas compleja la pagina, mas dinamica es, implicando el uso de motor de plantillas.
+
+Para finalizar tenemos las webapps las cuales tienen mucha interaccion y mucho dinamismo, como instagram, facebook.
+
+Ejemeplo de orden de complejidad: landing page -> blog -> e-commerce -> webapp
+En el caso de una webapp se complejiza tanto que no es conveniente usar javascript y los motores de plantillas
+sino que es mejor react. Sin embargo, todas las tecnologías sirven para realizar la tarea.
+
+Handlebars:
+
+- Pensado para agregar un nivel medio de dinamismo en una web.
+- Preprocesa el html que queremos renderizar, reconociendo el patron {{variable}} de manera que va a 
+buscar un objeto que cuente con dicha propiedad para poder sustituir, dando el efecto de dinamismo.
+- No esta pensado para elementos de cambios constantes, esto debido a que los cambios siguen requiriendo
+una renderizacion completa del DOM.
+
+Instalar:
+1. npm i express-handlebars
+2. Se crea la carpeta views->layouts
+3. Creamos dentro de la carpeta layouts la plantilla base: main.handlebars
+4. Dentro de views creamos el index.handlebars
+
