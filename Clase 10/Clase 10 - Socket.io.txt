@@ -1,0 +1,18 @@
+Socket.io es una libraria de javascript Express que nos facilita el uso de Socket en este framework.
+- Debe instanciarse del lado del cliente y del servidor.
+- Cuenta con una API casi identica para el cliente y para el servidor.
+- Utiliza el protocolo Websocket
+- Se puede usar como contenedor para Websocket.
+- Fiabilidad:  se establecen incluso con proxies, balaceadores, firewalls y antivirus.
+- Soporte de reconexión automática. A menos que se indique lo contrario, un cliente desconectado
+intentará siempre volver a conectarse, ahsta que el servidor vuelva a estar disponible.
+- Soporte binario.
+
+Instalacion
+- npm i socket.io
+
+Configuracion:
+
+Cuando usar cada emit?
+Ej:
+- Si quiero armar un chat grupal: socketServer.emit

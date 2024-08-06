@@ -1,0 +1,40 @@
+HTTP es conexion debile
+request y response
+
+Con websocket tenemos una conexion mejor, donde el servidor no necesita una request
+para enviar datos.
+
+Que hace que websocket se destaque
+Su protocolo TCP establece dos endpoints de comunicacion, conocidos como sockets.
+Se establece una comunicacion bidireccional entre el cliente y el servidor.
+- El cliente puede obtener recursos del servidor cuando los pida.
+- El servidor puede entregar informacion sin que el usuario se lo pida.
+
+HTTP Long Polling:
+Este fue el primer intento de realizar una actualización en tiempo real.
+Consiste en que el cliente vuelva a hacer una petición tan pronto como reciba una respuesta del servidor.
+Se bombardea al servidor con peticiones para emular respuestas en tiempo real.
+Sin embargo, esta operacion era costosa en recursos y lenta para considerarse "tiempo real".
+
+Solución óptima: Websocket
+Es un PROTOCOLO
+- El cliente no tiene que actualizar la pag constantemente
+- Cuando el servidor recibe una actualización, actualiza a todos los clientes conectados
+de esta manera da informacion en tiempo real.
+- Una vez se finalizan las actualizaciones, el socket se cierra y el servidor deja de notificar
+al cliente.
+
+Funcionamiento del Websocket.
+El cliente envia una solicitud HTTP llamada Handhsake. Este es un "acuerdo" de confianza para que 
+el serviro pueda actualizar al cliente sin que este lo pida.
+El servidor recibe la petición de Handhsake y procede a "responder" el saludo. Esto es abrir conexión.
+Esta comunicacion es persistente hasta que alguno de los lados decide cerrar el canal de comunicacion
+
+1. HTTP INICIAL
+2. Handhsake
+3. SE ABRE EL CONTRATO
+4. SE ABRE LA CONEXION
+
+HTTP no sustituye a Websocket y viceversa. Ambos son complementos.
+
+
