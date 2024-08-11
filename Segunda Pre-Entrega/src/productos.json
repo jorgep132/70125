@@ -1,0 +1,13 @@
+[
+  {
+    "id": 1,
+    "title": "Alfajor",
+    "description": "Guaymallen",
+    "code": "AG1",
+    "price": 450,
+    "status": true,
+    "stock": 20,
+    "category": "Golosinas",
+    "thumbnails": "/images/1723311128241-guaymallen_blanco__87288.jpg"
+  }
+]

@@ -1,0 +1,22 @@
+<form>
+<h2>Agregar producto</h2>
+<div>Titulo:      <input type='text' id='title'></div>
+<div>Descripcion: <input type='text' id='description'></div>
+<div>Codigo:      <input type='text' id='code'></div>
+<div>Precio:      <input type='text' id='price'></div>
+<div>Estado:      <input type='text' id='status'></div>
+<div>Stock:       <input type='text' id='stock'></div>
+<div>Categoria:   <input type='text' id='category'></div>
+<input type="file" id='thumbnails'>
+<button id="agregar" type="button">Agregar Producto</button>
+</form>
+
+<h2>Lista de productos: </h2>
+<div id="product-list"></div>
+
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+<link rel="stylesheet" type="text/css" href="/css/styles.css">
+<script src="socket.io/socket.io.js"></script>
+<script type="module" src="/js/realTimeProducts.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
